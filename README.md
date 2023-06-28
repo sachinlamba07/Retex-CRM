@@ -1,4 +1,4 @@
-# inconclusive-meal-3122
+# Retex-CRM
 A CRM system, also known as a Customer Relationship Management system, is a software tool that assists businesses in managing and improving customer relationships and interactions.
 Welcome to Retax A CRM system, also known as a Customer Relationship Management system, is a software tool that assists businesses in managing and improving customer relationships and interactions. This is a collaborative Project from Masai School in the Construct Week With the 2 team members within 5 Days. Deployed URL 👉 https://jocular-mooncake-2f4da0.netlify.app/
 
