@@ -4,9 +4,9 @@ Welcome to Retax A CRM system, also known as a Customer Relationship Management 
 
 Our Team Members
 
-Aniket Sengar 
+Sachin Lamba
 
-Sachin Lamba 
+Aniket Sengar 
 
 💻 Tech Stack
 
@@ -34,7 +34,7 @@ By this Project we have learned how to collaborate and communicate with team eff
 
 We also got a glimpse of using GitHub for the version control.
 
-Source Code(GitHub link):- https://github.com/Anklet9/inconclusive-meal-3122.git
+Source Code(GitHub link):- https://github.com/sachinlamba07/Retex-CRM.git
 
 Show your support Give a ⭐️ if you like this project!
 
