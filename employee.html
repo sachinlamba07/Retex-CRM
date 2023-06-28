@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/employee.css" />
+    <link rel="shortcut icon" href="images/Retax.jpg" type="jpeg/png">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- navbar starts -->
+        <nav id="navbar">
+            <div class="nav-child">
+                <h1 id="logo">Retax</h1>
+                <input type="text" name="search" id="search" placeholder="Search" />
+
+                <div class="link-div">
+                    <img class="nav-icon" src="images/dashboard.png" alt="pic" />
+                    <a class="links" id="dashboard" href="dashboard.html">Dashboard</a>
+                </div>
+                
+                <div class="link-div">
+                    <img class="nav-icon" src="images/task.png" alt="pic" />
+                    <a class="links" id="task" href="#">Task</a>
+                </div>
+                
+                <div class="link-div">
+                    <img class="nav-icon" src="images/calendar.png" alt="pic" />
+                    <a class="links" id="calender" href="#">Calender</a>
+                </div>
+                
+                <div id="emp-div" class="link-div">
+                    <img class="nav-icon" src="images/employees.png" alt="pic" />
+                    <a class="links" id="employees" href="employee.html">Employees</a>
+                </div>
+                
+                <div class="link-div">
+                    <img class="nav-icon" src="images/customer.png" alt="pic" />
+                    <a class="links" id="customers" href="customer.html">Customers</a>
+                </div>
+                
+                <div class="link-div">
+                    <img class="nav-icon" src="images/cases.png" alt="pic" />
+                    <a class="links" id="cases" href="#">Cases</a>
+                </div>
+                
+                <div class="link-div">
+                    <img class="nav-icon" src="images/leads.png" alt="pic" />
+                    <a class="links my-link" id="lead" href="#">Leads</a>
+                </div>
+
+                <!--Setting logout -->
+
+                <div class="bottom-nav">
+                    <hr class="divider">
+                    <br>
+                    <div class="link-div">
+                        <img class="nav-icon" src="images/setting.png" alt="pic" />
+                        <a class="links" id="setting" href="google.com">Settings</a>
+                    </div>
+
+                    <div class="link-div">
+                        <img class="nav-icon" src="images/help.png" alt="pic" />
+                        <a class="links" id="help" href="#">Help</a>
+                    </div>
+                    <br>
+                    <hr />
+                    <br>
+                    <div class="link-div">
+                        <img class="nav-icon" src="images/logout.png" alt="pic" />
+                        <a class="links" id="logout" href="#">Logout</a>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Employee Page Starts here -->
+        <div id="employees-page">
+            <div id="button-div">
+                <h1>Employee</h1>
+                <button id="add-Employee-emp">Add an Employee</button>
+            </div>
+            <div id="filterbar">
+                <input type="text" name="emp" id="search_emp" placeholder="Search by Name">
+                <!-- Postion Filter -->
+                <select name="" id="postion">
+                    <option value="">Select Postion</option>
+                    <option value="Head Of Marketing">Head Of Marketing</option>
+                    <option value="Marketing Consultant">Marketing Consultant</option>
+                    <option value="Marketing Coordinator">Marketing Coordinator</option>
+                    <option value="Marketing Manager">Marketing Manager</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Marketing Analyst">Marketing Analyst</option>
+                    <option value="Head Of Sales">Head Of Sales</option>
+                    <option value="Sales Manager">Sales Manager</option>
+                    <option value="Lead Generator">Lead Generator</option>
+                    <option value="Sales Representative">Sales Representative</option>
+                    <option value="Sales Consultant">Sales Consultant</option>
+                </select>
+                <!-- Department Filter -->
+                <select name="" id="dept">
+                    <option value="">Select Department</option>
+                    <option value="sales">Sales</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+                <!-- Status Filter -->
+                <select name="" id="estatus">
+                    <option value="">Select Status</option>
+                    <option value="active">Active</option>
+                    <option value="In a meeting">In a meeting</option>
+                    <option value="Out sick">Out sick</option>
+                </select>
+            </div>
+            <br>
+            <table CELLSPACING=2>
+                <thead>
+                    <td style="width: 20px;"></td>
+                    <td>NAME</td>
+                    <td>POSITION</td>
+                    <td>DEPARTMENT</td>
+                    <td>STATUS</td>
+                    <td>PHONE NUMBER</td>
+                    <td>EMAIL</td>
+                    <td></td>
+                </thead>
+                <tbody>
+                    <!-- append here all the data -->
+            </table>
+            <div id="footer">
+                <div id="button-formet">
+                    <div class="delete-edit-class" id="delete-edit">
+                        <button id="edit-emp">✎ Edit</button>
+                        <button id="delete-emp">🗑 Delete</button>
+                      </div>
+                </div>
+                
+                <div id="pagination">
+                  
+                </div>
+              
+              </div>
+        </div>
+
+        <div id="add-Employee-form" class="add-Employee-form-class">
+            <div class="title">
+              <h2>Add Employee</h2>
+            </div>
+            
+    
+            <div class="input-tags">
+                <select name="" id="emp_dept">
+                    <option value="Sales">Sales</option>
+                    <option value="Marketing">Marketing</option>
+                </select><br>
+            <input placeholder="Enter Name" type="text" id="emp_name"><br>
+            <input placeholder="Enter Email" type="email" id="emp_email"><br>
+            <input placeholder="Enter Location" type="text" id="emp_location"><br>
+            <input placeholder="Enter Phone" type="number" id="emp_phone"><br>
+            <input placeholder="Enter Start Date" type="date" id="emp_start_date"><br>
+            <select name="" id="emp_position">
+                <option value="Head Of Marketing">Head Of Marketing</option>
+                <option value="Marketing Consultant">Marketing Consultant</option>
+                <option value="Marketing Coordinator">Marketing Coordinator</option>
+                <option value="Marketing Manager">Marketing Manager</option>
+                <option value="Marketing Specialist">Marketing Specialist</option>
+                <option value="Marketing Analyst">Marketing Analyst</option>
+                <option value="Head Of Sales">Head Of Sales</option>
+                <option value="Sales Manager">Sales Manager</option>
+                <option value="Lead Generator">Lead Generator</option>
+                <option value="Sales Representative">Sales Representative</option>
+                <option value="Sales Consultant">Sales Consultant</option>
+            </select><br>
+            <input placeholder="Enter Profile-Pic Link" type="text" id="emp_profile"><br>
+            <select name="emp_status" id="emp_status">
+                <option value="">Select Status</option>
+                <option value="Active">Active</option>
+                <option value="In a Meeting">In a Meeting</option>
+                <option value="Out Sick">Out Sick</option>
+            </select>
+            </div>
+            <div id="form_button">
+                <button id="emp_submit">Submit</button>
+                <button id="emp_cancel">Cancel</button>
+            </div>
+            
+            
+     
+          </div>
+         <div id="overlay"></div>
+
+    </div>
+    <script src="script/employee.js"></script>
+    <script src="script/addEmployee.js"></script>
+</body>
+
+</html>
+

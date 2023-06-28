@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style/dashboard.css"/>
+  <link rel="stylesheet" href="style/employee.css">
+  <link rel="shortcut icon" href="images/Retax.jpg" type="jpeg/png">
+</head>
+
+<body>
+  <div class="container">
+    <nav id="navbar">
+      <div class="nav-child">
+        <h1 id="logo">Retax</h1>
+        <input type="text" name="search" id="search" placeholder="Search" />
+
+        <div class="link-div">
+          <img class="nav-icon" src="images/dashboard.png" alt="pic" />
+          <a class="links" id="dashboard" href="dashboard.html">Dashboard</a>
+        </div>
+
+        <div class="link-div">
+          <img class="nav-icon" src="images/task.png" alt="pic" />
+          <a class="links" id="task" href="#">Task</a>
+        </div>
+
+        <div class="link-div">
+          <img class="nav-icon" src="images/calendar.png" alt="pic" />
+          <a class="links" id="calender" href="#">Calender</a>
+        </div>
+
+        <div id="emp-div" class="link-div">
+          <img class="nav-icon" src="images/employees.png" alt="pic" />
+          <a class="links" id="employees" href="employee.html">Employees</a>
+        </div>
+
+        <div class="link-div">
+          <img class="nav-icon" src="images/customer.png" alt="pic" />
+          <a class="links" id="customers" href="customer.html">Customers</a>
+        </div>
+
+        <div class="link-div">
+          <img class="nav-icon" src="images/cases.png" alt="pic" />
+          <a class="links" id="cases" href="#">Cases</a>
+        </div>
+
+        <div class="link-div">
+          <img class="nav-icon" src="images/leads.png" alt="pic" />
+          <a class="links my-link" id="lead" href="#">Leads</a>
+        </div>
+
+        <!--Setting logout -->
+
+        <div class="bottom-nav">
+          <hr class="divider">
+          <br>
+          <div class="link-div">
+            <img class="nav-icon" src="images/setting.png" alt="pic" />
+            <a class="links" id="setting" href="google.com">Settings</a>
+          </div>
+
+          <div class="link-div">
+            <img class="nav-icon" src="images/help.png" alt="pic" />
+            <a class="links" id="help" href="#">Help</a>
+          </div>
+          <br>
+          <hr />
+          <br>
+          <div class="link-div">
+            <img class="nav-icon" src="images/logout.png" alt="pic" />
+            <a class="links" id="logout" href="#">Logout</a>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </nav> 
+
+    <!-- Dashboard and data div-->
+
+    <div id="dashboard-div">
+      <div id="profile">
+        <div class="profile-span">
+          <img class="notification" src="images/notification.png" alt="">
+          <img class="profile-img" src="images/dummy-profile.png" alt="profile">
+        </div>
+      </div>
+      <hr>
+
+      <!--Main content div start-->
+
+      <div id="dashboard-page">
+        <div id="button-div">
+          <h1>Dashboard</h1>
+          <button id="add-Employee-dashboard">Add an Employee</button>
+        </div>
+        <hr>
+        <h2 id="key-indicators">Key indicators</h2>
+        <div id="key-indicators">
+          <div id="successful-case">
+            <p>Successful-Case</p>
+            <h1 id="successful-case-data">145</h1>
+          </div>
+          <div id="leads">
+            <p>Leads</p>
+            <h1 id="leads-data">215</h1>
+          </div>
+          <div id="request">
+            <p>Request</p>
+            <h1 id="request-data">345</h1>
+          </div>
+          <div id="new-customer">
+            <p>New Customer</p>
+            <h1 id="new-customer-data">458</h1>
+          </div>
+        </div>
+
+        <hr>
+
+        <br>
+        <div id="graph-section">
+          <div id="graph">
+            <h2>Case</h2>
+          </div>
+          <div id="percentage">
+            <h2>Performance</h2>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="add-Employee-form" class="add-Employee-form-class">
+        <div class="title">
+          <h2>Add Employee</h2>
+        </div>
+        
+
+        <div class="input-tags">
+            <select name="" id="emp_dept">
+                <option value="Sales">Sales</option>
+                <option value="Marketing">Marketing</option>
+            </select><br>
+        <input placeholder="Enter Name" type="text" id="emp_name"><br>
+        <input placeholder="Enter Email" type="email" id="emp_email"><br>
+        <input placeholder="Enter Location" type="text" id="emp_location"><br>
+        <input placeholder="Enter Phone" type="number" id="emp_phone"><br>
+        <input placeholder="Enter Start Date" type="date" id="emp_start_date"><br>
+        <select name="" id="emp_position">
+            <option value="Head Of Marketing">Head Of Marketing</option>
+            <option value="Marketing Consultant">Marketing Consultant</option>
+            <option value="Marketing Coordinator">Marketing Coordinator</option>
+            <option value="Marketing Manager">Marketing Manager</option>
+            <option value="Marketing Specialist">Marketing Specialist</option>
+            <option value="Marketing Analyst">Marketing Analyst</option>
+            <option value="Head Of Sales">Head Of Sales</option>
+            <option value="Sales Manager">Sales Manager</option>
+            <option value="Lead Generator">Lead Generator</option>
+            <option value="Sales Representative">Sales Representative</option>
+            <option value="Sales Consultant">Sales Consultant</option>
+        </select><br>
+        <input placeholder="Enter Profile-Pic Link" type="text" id="emp_profile"><br>
+        <select name="emp_status" id="emp_status">
+            <option value="">Select Status</option>
+            <option value="Active">Active</option>
+            <option value="In a Meeting">In a Meeting</option>
+            <option value="Out Sick">Out Sick</option>
+        </select>
+        </div>
+        <div id="form_button">
+            <button id="emp_submit">Submit</button>
+            <button id="emp_cancel">Cancel</button>
+        </div>
+        
+        
+ 
+      </div>
+     <div id="overlay"></div>
+    </div>
+
+  </div>
+  <script src="script/dashboard.js"></script>
+ <!-- <script src="script/addEmployee.js"></script>  -->
+</body>
+
+</html>
+

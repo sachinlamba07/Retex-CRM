@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+img {
+    position: sticky;
+    height: 80px;
+    border-radius: 20%;
+    box-shadow: 2px 6px 2px 2px#321c40;
+    margin-left: 48%;
+    margin-left: 48%;
+}
+
+body {
+    background: rgb(130, 62, 226);
+    background: linear-gradient(180deg, rgba(130, 62, 226, 1) 0%, rgba(121, 69, 194, 1) 46%, rgba(136, 87, 171, 1) 78%, rgba(174, 128, 203, 1) 100%);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    border-radius: 10px;
+    margin: 30 auto;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    background-image: url("https://media2.giphy.com/media/26n6FG4SugYP2zuso/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    box-shadow: 0px 4px 2px 0px#c3a5d7;
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: white;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input {
+    width: 60%;
+    height: 20px;
+    background-color: #c3a5d7;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 60%;
+    height: 30px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: white;
+    background: #522e69;
+
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2x ease-in;
+    cursor: pointer;
+}
+
+button :hover {
+    background: #522e69;
+}
+
+.login {
+    height: 460px;
+    background: white;
+    border-radius: 60% /10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: #522e69;
+    transform: scale(.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-500px);
+}
+
+#chk:checked~.login label {
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(.6);
+}
+
+/* Style the modal dialog */
+.model {
+    display:none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+}
+
+/* model content */
+.model-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Error Message */
+#errorModel p {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+/* Close button */
+.errorclose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.errorclose:hover,
+.errorclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Queries */
+ @media screen and (max-width: 768px) {
+    .main {
+        width: 90%;
+    }
+
+    input,
+    button {
+        width: 80%;
+    }
+
+    img {
+        margin-left: 45%;
+    }
+} 
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .login {
+        transform: translateY(0);
+        border-radius: 10px;
+    }
+
+    .login label {
+        font-size: 1.8em;
+    }
+} 
